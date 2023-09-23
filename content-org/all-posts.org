@@ -1,0 +1,64 @@
+#+hugo_auto_set_lastmod: t
+#+hugo_base_dir: ../
+
+#+author: WMBH
+
+* DONE gokrazy                                                          :TIL:
+CLOSED: [2023-09-24 Sun 00:05]
+:PROPERTIES:
+:EXPORT_FILE_NAME: gokrazy
+:END:
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2023-09-24 Sun 00:05]
+:END:
+무슨 생각으로 이 블로그를 시작한 것일까? 누군가가 남긴 글에서 많은
+것을 배워온 나이기에 어느날 어딘가에서 살고 있는 누군가에게 조금이라도
+도움이 될 글을 남기고 싶다는 것이 하나라면, 내 denote에 의미없이
+쌓여만 가는 링크를 보면서 이에 대한 해결책으로 글을 남기겠다는게 또
+다른 하나이다. Denote에 남기는 글은 기존의 글들과 약간의 관계라도
+있어야할텐데 상당수의 링크는 가쉽거리라서 연결지을 방도가 없는 경우가
+많다. 결국 links 라는 파일에 쌓아두지만 10~20년이 지나도록 다시는
+들춰보지 않는 것이 99%. 그래서 생각하는 것이 TIL이다.  (TIL은 좀
+거북스럽다. "오늘 나는 이런 재미있는 글을 읽었다" 정도의 의미가
+적당한데 말이지.)
+
+Links 파일에 있는 것을 하나씩 없애면서 이리로 옮겨와야겠으나 그건
+언젠가의 일. 당장은 브라우저에 쌓여있는 수백개의 탭, 그날 그날
+들어오는 hacker news와 geek news의 링크만으로도 차고 넘칠 것이다.
+
+서론은 여기까지. 어제 본 글중에 단연코 눈에 들어온 것은
+[[https://gokrazy.org/][gokrazy]]다. Go는 그 탄생부터 statically-linked binary를 만들어냈다.
+(그러고보니 plan9의 6c같은 컴파일러는 plan9의 libc와 어떻게
+link했었을까?) Go는 glibc나 musl을 통하지 않고 바로 syscall을
+호출한다. Go에게 필요한 기반은 linux kernel의 syscall interface
+뿐이다. 이런 특성을 활용해서 pid 0번 init부터, 여타 시스템
+라이브러리와 바이너리를 싹 걷어내고, 오롯이 go compiler와 go
+compiler로 만든 바이너리로 userland를 구축한 것이다.
+
+예전에 비하면 go에 대한, 정확히는 go의 현재 디자인과 그 디자인 철학에
+대한 애정이 조금은 줄어들었으나 아직 평균 이상이라고 생각하는데, 이런
+멋진 프로젝트를 어찌 처음 들어봤을꼬? 아이디어도 좋다. 위에서 언급한
+go의 독창적인 특성도 잘 살리면서, 결과물 자체도 유의미하니까 말이다.
+
+집에서 몇년째 사용하는 raspberry pi 4B가 gokrazy의 대표적인 use case로
+소개 되었지만 그렇다고 직접 이걸 사용할 것 같지는 않다. 다만 참신한
+아이디어는 기억해두고 언젠가 힌트로 활용할 날이 오기를 바래본다.
+
+사족으로 hacker news에 흥미로운 댓글이 있었다. 마침 GNU 40주년 관련된
+글이 며칠 전에 올라왔었고 GNU/Linux라는 표기에 대한 논의도 있었는데,
+gokrazy는 GNU-산 결과물을 전혀 사용하지 않으니 GNU나 free software
+운동에 거부감이 있는 사람들에게는 치고 들어갈 포인트로 보인 모양이다.
+Linux는 GNU 없이 널리 퍼질 수 없었으리라는 이야기에 대해, 현재 가장
+널리 배포된 linux 시스템(android) 에는 GNU 구성요소가 전혀 사용되지
+않으니 현 상황에서 GNU가 강조될 필요가 없다는 말까지 오가더라.
+
+* DONE 처음
+CLOSED: [2023-09-23 Sat 16:36]
+:PROPERTIES:
+:EXPORT_FILE_NAME: first-post
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2023-09-23 Sat 16:36]
+:END:
+시작이 반이다.
+옛말이 틀리지 않음을 나 스스로 증명해야겠지?
