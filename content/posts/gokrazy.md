@@ -1,6 +1,6 @@
 +++
 title = "gokrazy"
-author = ["WMBH"]
+author = ["mwbh"]
 date = 2023-09-24T00:05:00+09:00
 lastmod = 2023-09-24T00:05:14+09:00
 tags = ["TIL"]

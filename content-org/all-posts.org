@@ -1,7 +1,7 @@
 #+hugo_auto_set_lastmod: t
 #+hugo_base_dir: ../
 
-#+author: WMBH
+#+author: mwbh
 
 * DONE gokrazy                                                          :TIL:
 CLOSED: [2023-09-24 Sun 00:05]

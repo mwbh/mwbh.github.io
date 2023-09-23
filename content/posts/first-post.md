@@ -1,6 +1,6 @@
 +++
 title = "처음"
-author = ["WMBH"]
+author = ["mwbh"]
 date = 2023-09-23T16:36:00+09:00
 lastmod = 2023-09-23T18:42:53+09:00
 draft = false
