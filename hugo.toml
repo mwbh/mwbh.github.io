@@ -1,6 +1,7 @@
 baseURL = 'https://mwbh.github.io'
 languageCode = 'ko-kr'
 title = 'MWBH'
+
 googleAnalytics = "G-SLMTTVMX1B"
 
 [module]
